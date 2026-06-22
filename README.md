@@ -58,3 +58,20 @@ If you discover a security vulnerability within Laravel, please send an e-mail t
 
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
 "# online-store" 
+
+
+# Online Store API
+
+Backend E-commerce API built with Laravel.
+
+## Features
+- Authentication
+- Products CRUD
+- Categories CRUD
+- Orders
+- Add To Cart
+
+## Technologies
+- Laravel
+- MySQL
+- Sanctum
