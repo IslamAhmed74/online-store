@@ -37,115 +37,6 @@ The API uses **Bearer Token Authentication**.
 
 After a successful login, the API returns an authentication token that can be used to access protected endpoints.
 
-### Register
-
-**POST**
-
-```text
-/api/register
-```
-
-Example parameters:
-
-```text
-name
-email
-password
-password_confirmation
-```
-
-### Login
-
-**POST**
-
-```text
-/api/login
-```
-
-Example:
-
-```text
-email: eslam123@gmail.com
-password: ********
-```
-
-The login response returns the authenticated user and an access token.
-
-### Logout
-
-**POST**
-
-```text
-/api/logout
-```
-
-The token is sent using the **Authorization → Bearer Token** header.
-
----
-
-## 📦 Categories
-
-Categories can be created through the API.
-
-### Create Category
-
-**POST**
-
-```text
-/api/category
-```
-
-Example:
-
-```text
-Name: Hoodies
-```
-
-Example response:
-
-```json
-{
-    "Name": "Hoodies",
-    "id": 1
-}
-```
-
----
-
-## 🛍️ Products
-
-Products are associated with categories using `category_id`.
-
-### Create Product
-
-**POST**
-
-```text
-/api/product
-```
-
-Example parameters:
-
-```text
-category_id: 1
-name: red hody
-p_price: 350
-```
-
-Example response:
-
-```json
-{
-    "message": "okay",
-    "product": {
-        "category_id": "1",
-        "name": "red hody",
-        "p_price": "350",
-        "id": 1
-    }
-}
-```
-
 ---
 
 ## 📸 API Testing
@@ -156,7 +47,8 @@ The following screenshots demonstrate the API endpoints and their responses.
 
 A new user can be registered using the `/api/register` endpoint.
 
-![User Registration](screenshots/register.png)
+<img width="994" height="347" alt="image" src="https://github.com/user-attachments/assets/ae78ff23-58d4-49a4-a3f1-5df8379e7c30" />
+
 
 ---
 
@@ -164,7 +56,8 @@ A new user can be registered using the `/api/register` endpoint.
 
 After login, the API returns the authenticated user information and an access token.
 
-![User Login](screenshots/login.png)
+<img width="1051" height="369" alt="image" src="https://github.com/user-attachments/assets/a5cbb0f7-6246-4ff2-bd7c-7c6fc766d87d" />
+
 
 ---
 
@@ -172,7 +65,8 @@ After login, the API returns the authenticated user information and an access to
 
 A category can be created by sending its name to the category endpoint.
 
-![Create Category](screenshots/category.png)
+<img width="954" height="232" alt="image" src="https://github.com/user-attachments/assets/e1bff375-bc1e-437b-9c73-706b8f567c18" />
+
 
 ---
 
@@ -180,7 +74,8 @@ A category can be created by sending its name to the category endpoint.
 
 Products can be created by providing the category ID, product name, and price.
 
-![Create Product](screenshots/product.png)
+<img width="985" height="317" alt="image" src="https://github.com/user-attachments/assets/edfcb730-32bd-4b70-9a92-96e49143cd48" />
+
 
 ---
 
@@ -188,7 +83,8 @@ Products can be created by providing the category ID, product name, and price.
 
 Authenticated users can log out by sending their Bearer Token to the logout endpoint.
 
-![User Logout](screenshots/logout.png)
+<img width="874" height="248" alt="image" src="https://github.com/user-attachments/assets/eb5bd70d-641c-422a-8061-520df5fe5285" />
+
 
 ---
 
